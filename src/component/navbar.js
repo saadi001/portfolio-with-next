@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 
 const NavbarPage = () => {
   const router = useRouter();
-  console.log(router);
   const CustomLink = ({ href, title, className = "" }) => {
     return (
       <Link href={href} className={`${className} relative group`}>
