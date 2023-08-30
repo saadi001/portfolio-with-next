@@ -40,7 +40,7 @@ const About = () => {
         <title>About | sekh saadi</title>
         <meta name="description" content="any description"></meta>
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <LayoutPage className="pt-16 mt-2">
           <AnimatedText
             text={"Passion Fuels Purpose!"}
@@ -48,7 +48,7 @@ const About = () => {
           ></AnimatedText>
           <div className="grid grid-cols-8 w-full gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h1 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h1 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h1>
               <p className="font-medium">
@@ -73,8 +73,8 @@ const About = () => {
                 your next project.
               </p>
             </div>
-            <div className="col-span-3 h-max relative rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"></div>
+            <div className="col-span-3 h-max relative rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-8">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light"></div>
               <Image
                 src={profilePic}
                 alt="profile pic"
@@ -86,7 +86,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumber value={50} />+
                 </span>
-                <h1 className="text-xl font-medium capitalize text-dark/75">
+                <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   satisfied clients
                 </h1>
               </div>
@@ -94,7 +94,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                     <AnimatedNumber value={30}/>+
                 </span>
-                <h1 className="text-xl font-medium capitalize text-dark/75">
+                <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   projects completed
                 </h1>
               </div>
@@ -102,7 +102,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                 <AnimatedNumber value={1}/>+
                 </span>
-                <h1 className="text-xl font-medium capitalize text-dark/75">
+                <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   years of experience
                 </h1>
               </div>

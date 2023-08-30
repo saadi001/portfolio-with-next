@@ -16,13 +16,13 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             {position}&nbsp;
             <a
               target="_blank"
-              className="text-primary capitalize"
+              className="text-primary dark:text-primaryDark capitalize"
               href={companyLink}
             >
               @{company}
             </a>
           </h3>
-          <span className="capitalize font-medium text-dark/75">
+          <span className="capitalize font-medium text-dark/75 dark:text-light/75">
             {time} | {address}
           </span>
           <p className="font-medium w-full">{work}</p>
@@ -42,14 +42,14 @@ const Experience = () => {
 
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center dark:text-light">
         Experience
       </h2>
 
 
       <div ref={ref} className="w-[75%] mx-auto relative">
 
-        <motion.div style={{scaleY:scrollYProgress}} className="absolute left-9 top-4 w-[4px] h-full bg-dark origin-top"/>
+        <motion.div style={{scaleY:scrollYProgress}} className="absolute left-9 top-4 w-[4px] h-full bg-dark dark:bg-light origin-top"/>
 
         <ul className="w-full flex flex-col items-center justify-between ml-4">
           <Details
