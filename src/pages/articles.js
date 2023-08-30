@@ -57,17 +57,17 @@ const ArticleComponent = ({ img, title, date, link }) => {
     initial={{y:200}}
     whileInView={{y:0, transition: {duration: 0.5, ease: "easeInOut"}}}
     viewport={{once: true}}
-    className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 last:mb-32 border border-solid border-dark border-r-4 border-b-4">
+    className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 last:mb-32 border border-solid border-dark border-r-4 border-b-4 dark:bg-dark dark:text-light dark:border-light">
       <MovingImage img={img} title={title} link={link} />
-      <span className="font-semibold text-primary pl-4">{date}</span>
+      <span className="font-semibold text-primary dark:text-primaryDark pl-4">{date}</span>
     </motion.li>
   );
 };
 
 const FeatureArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-2xl"></div>
+    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative dark:bg-dark dark:border-light dark:text-light">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-2xl dark:bg-light"></div>
       <Link
         href={link}
         target="_blank"
@@ -87,7 +87,7 @@ const FeatureArticle = ({ img, title, time, summary, link }) => {
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
     </li>
   );
 };
@@ -131,7 +131,7 @@ const Article = () => {
             />
           </ul>
 
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light">
             Articles
           </h2>
           <ArticleComponent
