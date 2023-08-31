@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Logo = () => {
   return (
-    <motion.div className="flex justify-center items-center mt-2 bg-dark text-light rounded-full border border-solid border-transparent dark:border-light"
+    <motion.div className="flex justify-center items-center mt-2 bg-dark text-light rounded-full border border-solid border-transparent dark:border-light z-50"
     whileHover={{
         backgroundColor: [
           "#121212",
