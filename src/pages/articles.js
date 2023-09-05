@@ -9,6 +9,7 @@ import article2 from "../../public/images/articles/create loading screen in reac
 import article3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import article4 from "../../public/images/articles/smooth scrolling in reactjs.png";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/component/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -103,6 +104,7 @@ const Article = () => {
         <title>Articles | sekh saadi</title>
         <meta name="description" content="any description"></meta>
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <LayoutPage className="pt-16 mt-1">
           <AnimatedText
