@@ -5,11 +5,13 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic2 from "../../public/images/sheikh saadi.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/component/Skills";
 import Experience from "@/component/Experience";
 import Education from "@/component/Education";
 import TransitionEffect from "@/component/TransitionEffect";
+import SkillTwo from "@/component/SkillTwo";
 
 const About = () => {
   const AnimatedNumber = ({ value }) => {
@@ -79,7 +81,7 @@ const About = () => {
             <div className="col-span-3 h-max relative rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-8 xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light"></div>
               <Image
-                src={profilePic}
+                src={profilePic2}
                 alt="profile pic"
                 className="w-full h-auto rounded-2xl"
               ></Image>
@@ -115,8 +117,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Skills/>
-          <Experience/>
+          {/* <Skills/> */}
+          <SkillTwo/>
+          {/* <Experience/> */}
           <Education/>
         </LayoutPage>
       </main>

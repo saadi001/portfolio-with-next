@@ -1,4 +1,5 @@
 import Footer from "@/component/Footer";
+import FooterTwo from "@/component/FooterTwo";
 import NavbarPage from "@/component/navbar";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
@@ -24,7 +25,8 @@ export default function App({ Component, pageProps }) {
         <AnimatePresence mode="wait">
         <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
-        <Footer/>
+        {/* <Footer/> */}
+        <FooterTwo/>
       </main>
     </>
   );

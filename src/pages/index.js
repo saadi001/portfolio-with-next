@@ -2,12 +2,16 @@ import LayoutPage from "@/component/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePicture from "../../public/images/profile/developer-pic-1.png";
+import profilePicture2 from "../../public/images/PXL_20220305_185455526-PhotoRoom (10).png";
+import profilePicture3 from "../../public/images/2.png";
+import profilePicture4 from "../../public/images/3.png";
 import AnimatedText from "@/component/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/component/icons";
 import HireMe from "@/component/HireMe";
 import lightbulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/component/TransitionEffect";
+import FooterTwo from "@/component/FooterTwo";
 
 export default function Home() {
   return (
@@ -19,10 +23,10 @@ export default function Home() {
       <TransitionEffect/>
       <main className="flex items-center text-dark dark:text-light w-full min-h-screen">
         <LayoutPage className="mt-1 pt-0 md:mt-16 sm:mt-8">
-          <div className="flex justify-between items-center w-full lg:flex-col">
+          <div className="flex justify-between items-center gap-3 w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
               <Image
-                src={profilePicture}
+                src={profilePicture4}
                 alt="sheikh saadi"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
@@ -59,11 +63,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </LayoutPage>
+        </LayoutPage>        
         <HireMe></HireMe>
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image src={lightbulb} alt="bulb" className="w-full h-auto"></Image>
         </div>
+        
       </main>
     </>
   );
