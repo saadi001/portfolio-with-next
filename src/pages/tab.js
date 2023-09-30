@@ -1,5 +1,5 @@
 import Filter from "@/component/Filter";
-import Project from "@/component/Project";
+import Project from "@/component/ProjectCard";
 import React from "react";
 import { useState } from "react";
 
