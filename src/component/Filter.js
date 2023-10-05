@@ -16,7 +16,7 @@ const Filter = ({project,
         },[activeGenre, project, setFiltered])
 
     return (
-        <div>
+        <div className='text-dark dark:text-light'>
             <div className='flex items-center gap-x-12  w-full mt-6 justify-center font-medium sm:text-sm sm:gap-x-5'>
             <button onClick={()=>setActiveGenre("all")} className={`${activeGenre === "all" ? "text-primary font-bold " : ""}`}>All</button>
             <button onClick={()=>setActiveGenre("frontend")} className={`${activeGenre === "frontend" ? "text-primary font-bold" : ""}`}>Frontend</button>

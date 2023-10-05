@@ -140,7 +140,7 @@ const Project = ({ projects }) => {
             text={"Imagination trumps knowledge!"}
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="w-full px-36 md:px-16 sm:px-12 xs:px-0 sm:text-sm xs:text-xs mt-5 font-medium text-center">
+          <div className="text-dark w-full px-36 md:px-16 sm:px-12 xs:px-0 sm:text-sm xs:text-xs mt-5 font-medium text-center dark:text-light ">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
               quaerat natus iusto, in dolores exercitationem facilis sed
@@ -214,7 +214,7 @@ const Project = ({ projects }) => {
 
           {/* projects  */}
           <div className="w-full mt-5">
-            <div className="text-center text-2xl font-extrabold mt-12">
+            <div className="text-center text-dark text-2xl font-extrabold mt-12 dark:text-light">
               projects
             </div>
             <Filter

@@ -47,8 +47,8 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <LayoutPage className="pt-16 mt-2">
           <AnimatedText
-            text={"Passion Fuels Purpose!"}
-            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl"
+            text={"Passion for Pixels, Dedication to Development"}
+            className="mb-16 !text-7xl lg:!text-6xl sm:!text-5xl xs:!text-4xl"
           ></AnimatedText>
           <div className="grid grid-cols-8 w-full gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
@@ -56,11 +56,10 @@ const About = () => {
                 Biography
               </h1>
               <p className="font-medium">
-                Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with
+                Hi, I&apos;m Sekh Saadi, a web developer focused on front-end development with
                 a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+                digital experiences. With 1 and half years of learning experience in the field. I
+                am always looking for new and innovative ways to bring my done in best possible way.
               </p>
 
               <p className="my-4 font-medium">
@@ -70,11 +69,7 @@ const About = () => {
               </p>
 
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+              I love coding, doing creative works, solving problem, building projects. I also love to spend my leisure time by exploring new technology and reading books . I strongly believe, there&apos;s no limit of learning!
               </p>
             </div>
 
@@ -91,16 +86,7 @@ const About = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumber value={50} />+
-                </span>
-                <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  satisfied clients
-                </h1>
-              </div>
-
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                    <AnimatedNumber value={30}/>+
+                  <AnimatedNumber value={30} />+
                 </span>
                 <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   projects completed
@@ -109,10 +95,19 @@ const About = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                <AnimatedNumber value={1}/>+
+                    <AnimatedNumber value={3}/>+
                 </span>
                 <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  years of experience
+                  satisfied client
+                </h1>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                <AnimatedNumber value={1.5}/>+
+                </span>
+                <h1 className="text-xl text-right font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  years of learning experience
                 </h1>
               </div>
             </div>
