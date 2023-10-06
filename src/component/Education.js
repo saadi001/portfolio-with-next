@@ -50,31 +50,23 @@ const Education = () => {
             time={"2019-2023"}
             place={"Daffodil International University"}
             info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+              "Relevant courses included Data Structures and Algorithms, web related course, software development life cycle and project management related course."
             }
           />
           <Details
-            type={"Bachelor in Information Technology and Management"}
-            time={"2019-2023"}
-            place={"Daffodil International University"}
+            type={"Higher Secondary School Certificate"}
+            time={"2017-2019"}
+            place={"Hajigonj Degree College"}
             info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+              "Studied at group science with physics, chemistry, math and optional in biology."
             }
           />
           <Details
-            type={"Bachelor in Information Technology and Management"}
-            time={"2019-2023"}
-            place={"Daffodil International University"}
+            type={"Secondary School Certificate"}
+            time={"2012-2017"}
+            place={"Balia High School"}
             info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-            }
-          />
-          <Details
-            type={"Bachelor in Information Technology and Management"}
-            time={"2019-2023"}
-            place={"Daffodil International University"}
-            info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+              "Studied at group science with physics, chemistry, math and optional in biology."
             }
           />
         </ul>

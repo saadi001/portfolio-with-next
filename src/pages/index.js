@@ -38,8 +38,8 @@ export default function Home() {
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-6xl text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a passionate front-end developer, I am committed to transforming concepts into cutting edge web applications. Explore my projects, showcasing my expertise in React js and web development.
+              <p className="my-5 text-base font-medium md:text-sm sm:text-xs">
+                As a passionate front-end developer, I am committed to transforming concepts into cutting edge web applications. I thrive on staying up-to-date with the latest web technologies to ensure my projects are modern and cutting-edge. Let&apos;s collaborate to bring your digital vision to life!
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link

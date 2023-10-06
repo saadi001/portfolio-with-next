@@ -137,15 +137,12 @@ const Project = ({ projects }) => {
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <LayoutPage className="pt-16 mt-1">
           <AnimatedText
-            text={"Imagination trumps knowledge!"}
+            text={"Pixels to perfection!"}
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="text-dark w-full px-36 md:px-16 sm:px-12 xs:px-0 sm:text-sm xs:text-xs mt-5 font-medium text-center dark:text-light ">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
-              quaerat natus iusto, in dolores exercitationem facilis sed
-              similique nisi deserunt nihil accusantium autem, mollitia harum
-              voluptatibus beatae odit. Ipsam, odio.
+            With several years of learning experience, I&apos;ve honed my abilities to transform complex ideas and intricate designs into seamless, intuitive, and visually captivating websites and applications. I firmly believe that the user experience is at the heart of every successful digital product, and my work reflects this commitment.
             </p>
           </div>
 
@@ -213,7 +210,7 @@ const Project = ({ projects }) => {
           </div> */}
 
           {/* projects  */}
-          <div className="w-full mt-5">
+          <div className="w-full mt-36 lg:mt-24 sm:mt-20 xs:mt-12">
             <div className="text-center text-dark text-2xl font-extrabold mt-12 dark:text-light">
               projects
             </div>
@@ -223,11 +220,14 @@ const Project = ({ projects }) => {
               activeGenre={activeGenre}
               setActiveGenre={setActiveGenre}
             />
-            <motion.div layout className="w-full grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-5 mt-12 ">
+            <motion.div
+              layout
+              className="w-full grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-5 mt-16 sm:mt-8 "
+            >
               <AnimatePresence>
-              {filtered?.map((p) => {
-                return <ProjectCard key={p.id} project={p} />;
-              })}
+                {filtered?.map((p) => {
+                  return <ProjectCard key={p.id} project={p} />;
+                })}
               </AnimatePresence>
             </motion.div>
           </div>
@@ -240,7 +240,9 @@ const Project = ({ projects }) => {
 export default Project;
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://portfolio-server-saadi001.vercel.app/projects");
+  const res = await fetch(
+    "https://portfolio-server-saadi001.vercel.app/projects"
+  );
   const data = await res.json();
 
   return {
