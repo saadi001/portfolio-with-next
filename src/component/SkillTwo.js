@@ -22,12 +22,7 @@ const SkillTwo = () => {
             <span className="w-10 -ml-2 border-b-2 border-dark inline-block"></span>
           </h2>
           <p className="font-medium sm:text-base xs:text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            In one and half years learning experience, I have learn many different technology from basic to professional. I started from how internet works to javascript library like react js and react js framework next js. Besides also learn Backend in node js and express with mongodb as database. 
           </p>
           <div className="inline-block mt-12">
           <Link

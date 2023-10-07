@@ -66,7 +66,7 @@ const Education = () => {
             time={"2012-2017"}
             place={"Balia High School"}
             info={
-              "Studied at group science with physics, chemistry, math and optional in biology."
+              "Studied also in group science with physics, chemistry, math and optional in biology in high school."
             }
           />
         </ul>

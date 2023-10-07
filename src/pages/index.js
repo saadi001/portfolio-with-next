@@ -1,9 +1,6 @@
 import LayoutPage from "@/component/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePicture from "../../public/images/profile/developer-pic-1.png";
-import profilePicture2 from "../../public/images/PXL_20220305_185455526-PhotoRoom (10).png";
-import profilePicture3 from "../../public/images/2.png";
 import profilePicture4 from "../../public/images/3.png";
 import AnimatedText from "@/component/AnimatedText";
 import Link from "next/link";
@@ -11,7 +8,6 @@ import { LinkArrow } from "@/component/icons";
 import HireMe from "@/component/HireMe";
 import lightbulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/component/TransitionEffect";
-import FooterTwo from "@/component/FooterTwo";
 
 export default function Home() {
   return (
