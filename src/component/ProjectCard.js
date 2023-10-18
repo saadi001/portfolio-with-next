@@ -19,6 +19,8 @@ const ProjectCard = ({ project }) => {
         <div className="w-full overflow-hidden rounded-md">
           <FramerImage
             src={projectImage}
+            // width={500}
+            // height={500}
             alt="projectImage"
             className="w-full rounded-md"
             whileHover={{ scale: 1.05 }}
@@ -29,12 +31,17 @@ const ProjectCard = ({ project }) => {
           <p className="text-primary text-sm font-medium sm:text-xs">
             {project?.name}
           </p>
-          <p className="mt-2 text-xl sm:text-base font-semibold">
+          <p className="mt-2 text-xl sm:text-base font-semibold truncate">
             {project?.shortDescription}
           </p>
           <p className="mt-4 text-base sm:text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-            deserunt labore, consequuntur animi molestias dolor!
+            {
+              project?.details?.map((detail, i)=>{
+                return(
+                  <p className="truncate" key={i}>{detail}</p>
+                )
+              })
+            }
           </p>
           <div className="w-full mt-4 grid grid-cols-2 gap-3">
             <button className="border-2 border-dark rounded-md py-1.5 font-medium hover:bg-dark hover:text-light  xs:text-sm xs:py-1 dark:border-light dark:bg-light dark:text-dark dark:hover:text-light dark:hover:bg-dark">

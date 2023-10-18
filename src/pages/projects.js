@@ -241,7 +241,7 @@ export default Project;
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "https://portfolio-server-saadi001.vercel.app/projects"
+    "https://portfolio-server-gray.vercel.app/projects"
   );
   const data = await res.json();
 
