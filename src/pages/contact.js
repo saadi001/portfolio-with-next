@@ -4,6 +4,12 @@ import TransitionEffect from "@/component/TransitionEffect";
 import Head from "next/head";
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  GithubIcon,
+  GithubIconTwo,
+  LinkedInIcon,
+  TwitterIcon,
+} from "@/component/icons";
 
 const ContactPage = () => {
   return (
@@ -23,7 +29,13 @@ const ContactPage = () => {
             ></AnimatedText>
             <p className="mt-4 mb-12 text-sm dark:text-light">
               Or reaches via:
-              <span className="text-blue-600"> sheikhsadi1620@gamil.com</span>
+              <a
+                href="mailto:sheikhsadi1620@gmail.com"
+                className="text-blue-600"
+              >
+                {" "}
+                sheikhsadi1620@gamil.com
+              </a>
             </p>
 
             {/* container div  */}
@@ -96,19 +108,47 @@ const ContactPage = () => {
                   transition: { duration: 1, ease: "easeInOut" },
                 }}
                 viewport={{ once: true }}
-                className="bg-dark/90 shadow-md backdrop-blur-sm saturate-150 flex flex-col justify-between text-light absolute lg:relative  top-[40px] right-0 w-[350px] lg:w-full h-[calc(100%-80px)] rounded-md p-5 z-20 dark:bg-primaryDark/50"
+                className="bg-dark shadow-md backdrop-blur-sm saturate-150 flex flex-col justify-between text-light absolute lg:relative  top-[40px] right-0 w-[350px] lg:w-full h-[calc(100%-80px)] rounded-md p-8 z-20 dark:bg-primaryDark/50"
               >
                 <div>
                   <h3 className="text-3xl sm:text-xl text-primaryDark font-semibold mb-8 dark:text-gray-200">
                     Contact Info
                   </h3>
-                  <div className="flex flex-col flex-wrap gap-2 sm:text-sm dark:text-gray-300">
-                    <p>khatalBagan, kawran Bazar, Dhaka</p>
-                    <p>sheikhsadi1620@gmail.com</p>
+                  <div className="sm:text-sm dark:text-gray-300 font-mono">
+                    <p>khatalBagan, kawran Bazar, Dhaka, Bangladesh</p>
+                    <p className="mt-3">sheikhsadi1620@gmail.com</p>
                     <p>+8801836530309</p>
                   </div>
                 </div>
-                <div className="text-light dark:text-dark">hello</div>
+                <div className="text-light dark:text-dark w-full flex mt-3">
+                  <motion.a
+                    href={"https://twitter.com"}
+                    target={"_blank"}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="w-6 mr-3"
+                  >
+                    <TwitterIcon />
+                  </motion.a>
+                  <motion.a
+                    href={"https://github.com/saadi001"}
+                    target={"_blank"}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="w-6 mx-3"
+                  >
+                    <GithubIconTwo className={"dark:text-light"} />
+                  </motion.a>
+                  <motion.a
+                    href={"https://www.linkedin.com/in/sekh-saadi-itm/"}
+                    target={"_blank"}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="w-6 mx-3"
+                  >
+                    <LinkedInIcon />
+                  </motion.a>
+                </div>
               </motion.div>
             </div>
           </div>

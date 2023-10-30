@@ -22,11 +22,11 @@ const SkillTwo = () => {
             <span className="w-10 -ml-2 border-b-2 border-dark inline-block"></span>
           </h2>
           <p className="font-medium sm:text-base xs:text-sm">
-            In one and half years learning experience, I have learn many different technology from basic to professional. I started from how internet works to javascript library like react js and react js framework next js. Besides also learn Backend in node js and express with mongodb as database. 
+            In one and half years learning experience, I have learn many different technology from basic to professional. I started from how internet works to javascript library like react js and react js framework next js. Besides also learned Backend in node js and express with mongodb as database. 
           </p>
           <div className="inline-block mt-12">
           <Link
-                  href="/dummy.pdf"
+                  href="/resume of sekh saadi.pdf"
                   target="_blank"
                   className="flex items-center bg-dark text-light  py-3 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                 >

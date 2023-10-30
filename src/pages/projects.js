@@ -5,13 +5,116 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 import TransitionEffect from "@/component/TransitionEffect";
 import Filter from "@/component/Filter";
 import ProjectCard from "@/component/ProjectCard";
 
 const FramerImage = motion(Image);
+const Data = [
+  {
+    "id": 1,
+    "category": ["fullstack", "frontend"],
+    "image": "/images/projects/foodByt.png",
+    "name": "Foodbyt",
+    "shortDescription": "Iftaar delivery e-commerce site",
+    "liveLink": "https://foodbyt.netlify.app/",
+    "clientSide": "https://github.com/saadi001/foodbyt-frontend",
+    "serverSide": "https://github.com/saadi001/foodbyt-backend",
+    "details": [
+      "There are category-wise product to order and adding to cart as user wish.",
+      "Only logged in user can order product and see his profile where can see their previous pending orders",
+      "Jwt implementation, admin panel to see orders and confirmation."
+    ],
+    "technology": [
+      {
+        "title": "FrontEnd",
+        "description": "React, React router dom, tailwind, MerakiUI, DaisyUI, Vanilla CSS"
+      },
+      { "title": "Backend", "description": "Express, Node js, MongoDB" },
+      {
+        "title": "Node Package",
+        "description": "react hook form, react hot toast, react hero icons, tanstack query, swiper"
+      },
+      { "title": "Authentication", "description": "firebase" }
+    ]
+  },
+  {
+    "id": 2,
+    "category": ["frontend"],
+    "image": "/images/projects/itmSummit.png",
+    "name": "ITM Summit",
+    "shortDescription": "A summit event website",
+    "liveLink": "https://itmsummit2023.netlify.app/",
+    "clientSide": "https://github.com/saadi001/itm-summit-frontend",
+    "serverSide": "",
+    "details": [
+      "In home there is a registration button and timer.",
+      "Visitors will get idea about summit, organization,speakers and schedules .",
+      "Competition section will in the navbar what will sticky for highlighting to participate."
+    ],
+    "technology": [
+      {
+        "title": "FrontEnd",
+        "description": "react, react router dom, tailwind css, daisy ui, react hook form, react hot toast, react icons, tenstack query, react file-saver, sheetjs-style"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": ["frontend"],
+    "image": "/images/projects/taskManagement.png",
+    "name": "Daily Task Manager",
+    "shortDescription": "A daily task management web app",
+    "liveLink": "https://task-manager2e2.netlify.app/",
+    "clientSide": "https://github.com/saadi001/task-management",
+    "serverSide": "",
+    "details": [
+      "User must be logged in to use this web app and they can start adding task.",
+      "In my task route user can see details, edit, delete and mark this as complete task.",
+      "In complete task route there will be completed task and user can delete and make it not complete."
+    ],
+    "technology": [
+      {
+        "title": "FrontEnd",
+        "description": "React, React router dom, tailwind, MerakiUI, DaisyUI, Vanilla CSS"
+      },
+      { "title": "Backend", "description": "" },
+      {
+        "title": "Node Package",
+        "description": "react hook form, react hot toast, react toggle dark mode"
+      },
+      { "title": "Authentication", "description": "firebase" }
+    ]
+  },
+  {
+    "id": 4,
+    "category": ["fullstack"],
+    "image": "/images/projects/sellDom.png",
+    "name": "SellDom",
+    "shortDescription": "A used pc parts selling website",
+    "liveLink": "https://selldom-client.web.app/",
+    "clientSide": "https://github.com/saadi001/sellDom-client",
+    "serverSide": "https://github.com/saadi001/sellDom-Backend",
+    "details": [
+      "Here in home page user will see category wise product.",
+      "To see product details user have to logged in and He can be seller/buyer in sign up page",
+      " A buyer will only see orders, seller could be add product and only admin will see all buyers and sellers."
+    ],
+    "technology": [
+      {
+        "title": "FrontEnd",
+        "description": "React, React router dom, Tailwind,daisyUI, merakiUI"
+      },
+      { "title": "Backend", "description": "" },
+      {
+        "title": "Node Package",
+        "description": "react hook form, react hot toast, react read more read less, swiper"
+      },
+      { "title": "Authentication", "description": "firebase" }
+    ]
+  }
+]
 
 const FeaturedProduct = ({ type, title, summary, img, link, github }) => {
   return (
@@ -123,7 +226,7 @@ const ProjectComponent = ({ title, type, img, link, github }) => {
 };
 
 const Project = ({ projects }) => {
-  const [project, setProjects] = useState(projects);
+  const [project, setProjects] = useState(Data);
   const [filtered, setFiltered] = useState([]);
   const [activeGenre, setActiveGenre] = useState("all");
 
@@ -239,16 +342,16 @@ const Project = ({ projects }) => {
 
 export default Project;
 
-export const getStaticProps = async () => {
-  const res = await fetch(
-    "https://portfolio-server-gray.vercel.app/projects"
-  );
-  const data = await res.json();
+// export const getStaticProps = async () => {
+//   const res = await fetch(
+//     "https://portfolio-server-gray.vercel.app/projects"
+//   );
+//   const data = await res.json();
 
-  return {
-    props: {
-      projects: data,
-      revalidate: 30,
-    },
-  };
-};
+//   return {
+//     props: {
+//       projects: data,
+//       revalidate: 30,
+//     },
+//   };
+// };
