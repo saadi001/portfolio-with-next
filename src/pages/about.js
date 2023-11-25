@@ -79,6 +79,7 @@ const About = () => {
                 src={profilePic2}
                 alt="profile pic"
                 className="w-full h-auto rounded-2xl"
+                priority
               ></Image>
             </div>
 

@@ -40,8 +40,8 @@ const Frontend = ({ className }) => {
       <Technology icon={<TailwindIcon></TailwindIcon>} name={"Tailwind CSS"} percentage={"80%"} />
       {/* <Technology icon={<BootstrapIcon></BootstrapIcon>} name={"Bootstrap"} percentage={"70%"} /> */}
       <Technology icon={<ReactIcon></ReactIcon>} name={"React js"} percentage={"70%"} />
-      <Technology icon={<ReduxIcon></ReduxIcon>} name={"Redux"} percentage={"90%"} />
-      <Technology icon={<NextIcon></NextIcon>} name={"Next js"} percentage={"70%"} />
+      <Technology icon={<ReduxIcon></ReduxIcon>} name={"Redux"} percentage={"80%"} />
+      <Technology icon={<NextIcon></NextIcon>} name={"Next js"} percentage={"60%"} />
       
 
       

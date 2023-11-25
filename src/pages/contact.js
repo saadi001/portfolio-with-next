@@ -92,7 +92,7 @@ const ContactPage = () => {
                   <div className="mt-12 sm:mt-8 w-full flex justify-end">
                     <button
                       type="submit"
-                      className=" rounded-md bg-primary/90 backdrop-blur px-10 py-3 text-white sm:text-sm sm:px-5 sm:py-2"
+                      className=" rounded-md bg-primary/90 dark:bg-primaryDark/50 backdrop-blur px-10 py-3 text-white sm:text-sm sm:px-5 sm:py-2"
                     >
                       Send Message
                     </button>
